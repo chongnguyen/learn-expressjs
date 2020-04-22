@@ -1,0 +1,10 @@
+h1 User list
+a(href='/user/create') Add new user
+form(action="/user/search", method="get")
+  input(type="text", name="q" value=value)
+  input(type="submit", value="search")
+ul
+  each todo in todos
+    li= todo
+
+a(href="/") back home
